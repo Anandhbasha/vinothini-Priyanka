@@ -1,0 +1,14 @@
+.Navbar{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    background-color: blueviolet;
+    height: 8vh;
+    align-items: center;
+}
+a{
+    color: white;
+}
+#root{
+    width: 100%;
+}
