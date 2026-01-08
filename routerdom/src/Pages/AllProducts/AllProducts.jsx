@@ -4,7 +4,7 @@ import Mshirt from "../../assets/Images/ShirtsMens.webp"
 import MTshirt from "../../assets/Images/Tshirt.webp"
 import Wshirt from "../../assets/Images/Wshirt.webp"
 import WTshirt from "../../assets/Images/WTshirt.webp"
-import './AllProducts.css'
+import './AllProducts'
 
 const Produts = [
   {
