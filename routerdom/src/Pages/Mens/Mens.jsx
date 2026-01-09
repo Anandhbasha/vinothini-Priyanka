@@ -1,25 +1,11 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import Cards from '../../Components/Cards/Cards'
-import Mshirt from "../../assets/Images/ShirtsMens.webp"
-import MTshirt from "../../assets/Images/Tshirt.webp"
+import { PassingValues } from '../../App'
+
 
 const Mens = () => {
-  const MensProduct = [
-    {
-        prodCat:"Mens",
-        prodName:"Mens_Shirt",
-        prodPrice:500,
-        prodDesc:"Westside Gia Women's Easy Textured Spread Collar Casual Three-quarter Sleeve Shirt",
-        image:Mshirt
-      },
-      {
-        prodCat:"Mens",
-        prodName:"Mens_TShirt",
-        prodPrice:400,
-        prodDesc:"Westside Gia Women's Easy Textured Spread Collar Casual Three-quarter Sleeve Shirt",
-        image:MTshirt
-      }
-  ]
+  const Products = useContext(PassingValues)
+  const MensProduct = Products.filter((item)=>item.prodCat==="Mens")
   return (
     <div className='Mens'>
       {
